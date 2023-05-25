@@ -16,6 +16,10 @@
 		E01507512A1F85A100A210F1 /* BaseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507502A1F85A100A210F1 /* BaseAppTests.swift */; };
 		E015075B2A1F85A100A210F1 /* BaseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E015075A2A1F85A100A210F1 /* BaseAppUITests.swift */; };
 		E015075D2A1F85A100A210F1 /* BaseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E015075C2A1F85A100A210F1 /* BaseAppUITestsLaunchTests.swift */; };
+		E015078D2A1F86EE00A210F1 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E015078C2A1F86EE00A210F1 /* UIFont+Extensions.swift */; };
+		E015078F2A1F86F800A210F1 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E015078E2A1F86F800A210F1 /* Array+Extensions.swift */; };
+		E01507912A1F870C00A210F1 /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507902A1F870C00A210F1 /* DispatchQueue+Extensions.swift */; };
+		E01507932A1F876B00A210F1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507922A1F876B00A210F1 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		E01507562A1F85A100A210F1 /* BaseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E015075A2A1F85A100A210F1 /* BaseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAppUITests.swift; sourceTree = "<group>"; };
 		E015075C2A1F85A100A210F1 /* BaseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E015078C2A1F86EE00A210F1 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		E015078E2A1F86F800A210F1 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		E01507902A1F870C00A210F1 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		E01507922A1F876B00A210F1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		E01507382A1F859F00A210F1 /* BaseApp */ = {
 			isa = PBXGroup;
 			children = (
+				E015078B2A1F86B300A210F1 /* Extension */,
 				E01507392A1F859F00A210F1 /* AppDelegate.swift */,
 				E015073B2A1F859F00A210F1 /* SceneDelegate.swift */,
 				E015073D2A1F859F00A210F1 /* ViewController.swift */,
@@ -125,6 +134,17 @@
 				E015075C2A1F85A100A210F1 /* BaseAppUITestsLaunchTests.swift */,
 			);
 			path = BaseAppUITests;
+			sourceTree = "<group>";
+		};
+		E015078B2A1F86B300A210F1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E015078C2A1F86EE00A210F1 /* UIFont+Extensions.swift */,
+				E015078E2A1F86F800A210F1 /* Array+Extensions.swift */,
+				E01507902A1F870C00A210F1 /* DispatchQueue+Extensions.swift */,
+				E01507922A1F876B00A210F1 /* UIView+Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01507932A1F876B00A210F1 /* UIView+Extensions.swift in Sources */,
 				E015073E2A1F859F00A210F1 /* ViewController.swift in Sources */,
+				E015078F2A1F86F800A210F1 /* Array+Extensions.swift in Sources */,
 				E015073A2A1F859F00A210F1 /* AppDelegate.swift in Sources */,
+				E01507912A1F870C00A210F1 /* DispatchQueue+Extensions.swift in Sources */,
+				E015078D2A1F86EE00A210F1 /* UIFont+Extensions.swift in Sources */,
 				E015073C2A1F859F00A210F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
