@@ -7,212 +7,162 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E015077C2A1F868800A210F1 /* Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01507732A1F868700A210F1 /* Authentication.framework */; };
-		E01507812A1F868800A210F1 /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507802A1F868800A210F1 /* AuthenticationTests.swift */; };
-		E01507822A1F868800A210F1 /* Authentication.h in Headers */ = {isa = PBXBuildFile; fileRef = E01507762A1F868700A210F1 /* Authentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E015079B2A1F8ADE00A210F1 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E015079A2A1F8ADE00A210F1 /* AuthenticationCoordinator.swift */; };
-		E01507CB2A1F8B8B00A210F1 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01507CA2A1F8B8B00A210F1 /* Common.framework */; };
-		E01507CC2A1F8B8B00A210F1 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E01507CA2A1F8B8B00A210F1 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E01507D12A1F8C9B00A210F1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507D02A1F8C9B00A210F1 /* OnboardingViewController.swift */; };
-		E01507D32A1F8D3300A210F1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507D22A1F8D3300A210F1 /* OnboardingView.swift */; };
+		E01507AF2A1F8B3300A210F1 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01507A62A1F8B3300A210F1 /* Common.framework */; };
+		E01507B42A1F8B3300A210F1 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507B32A1F8B3300A210F1 /* CommonTests.swift */; };
+		E01507B52A1F8B3300A210F1 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = E01507A92A1F8B3300A210F1 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E01507C02A1F8B5800A210F1 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507BF2A1F8B5800A210F1 /* CoordinatorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E015077D2A1F868800A210F1 /* PBXContainerItemProxy */ = {
+		E01507B02A1F8B3300A210F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E015076A2A1F868700A210F1 /* Project object */;
+			containerPortal = E015079D2A1F8B3300A210F1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E01507722A1F868700A210F1;
-			remoteInfo = Authentication;
+			remoteGlobalIDString = E01507A52A1F8B3300A210F1;
+			remoteInfo = Common;
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		E01507CD2A1F8B8B00A210F1 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				E01507CC2A1F8B8B00A210F1 /* Common.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		E01507732A1F868700A210F1 /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E01507762A1F868700A210F1 /* Authentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Authentication.h; sourceTree = "<group>"; };
-		E015077B2A1F868800A210F1 /* AuthenticationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E01507802A1F868800A210F1 /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
-		E015079A2A1F8ADE00A210F1 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
-		E01507CA2A1F8B8B00A210F1 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E01507D02A1F8C9B00A210F1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		E01507D22A1F8D3300A210F1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E01507A62A1F8B3300A210F1 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01507A92A1F8B3300A210F1 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		E01507AE2A1F8B3300A210F1 /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01507B32A1F8B3300A210F1 /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
+		E01507BF2A1F8B5800A210F1 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E01507702A1F868700A210F1 /* Frameworks */ = {
+		E01507A32A1F8B3300A210F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E01507CB2A1F8B8B00A210F1 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E01507782A1F868800A210F1 /* Frameworks */ = {
+		E01507AB2A1F8B3300A210F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E015077C2A1F868800A210F1 /* Authentication.framework in Frameworks */,
+				E01507AF2A1F8B3300A210F1 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E01507692A1F868700A210F1 = {
+		E015079C2A1F8B3300A210F1 = {
 			isa = PBXGroup;
 			children = (
-				E01507752A1F868700A210F1 /* Authentication */,
-				E015077F2A1F868800A210F1 /* AuthenticationTests */,
-				E01507742A1F868700A210F1 /* Products */,
-				E01507C92A1F8B8B00A210F1 /* Frameworks */,
+				E01507A82A1F8B3300A210F1 /* Common */,
+				E01507B22A1F8B3300A210F1 /* CommonTests */,
+				E01507A72A1F8B3300A210F1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E01507742A1F868700A210F1 /* Products */ = {
+		E01507A72A1F8B3300A210F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E01507732A1F868700A210F1 /* Authentication.framework */,
-				E015077B2A1F868800A210F1 /* AuthenticationTests.xctest */,
+				E01507A62A1F8B3300A210F1 /* Common.framework */,
+				E01507AE2A1F8B3300A210F1 /* CommonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E01507752A1F868700A210F1 /* Authentication */ = {
+		E01507A82A1F8B3300A210F1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				E01507992A1F8ABB00A210F1 /* Coordinator */,
-				E01507CE2A1F8C4800A210F1 /* Onboarding */,
-				E01507762A1F868700A210F1 /* Authentication.h */,
+				E01507BE2A1F8B3F00A210F1 /* Coordinator */,
+				E01507A92A1F8B3300A210F1 /* Common.h */,
 			);
-			path = Authentication;
+			path = Common;
 			sourceTree = "<group>";
 		};
-		E015077F2A1F868800A210F1 /* AuthenticationTests */ = {
+		E01507B22A1F8B3300A210F1 /* CommonTests */ = {
 			isa = PBXGroup;
 			children = (
-				E01507802A1F868800A210F1 /* AuthenticationTests.swift */,
+				E01507B32A1F8B3300A210F1 /* CommonTests.swift */,
 			);
-			path = AuthenticationTests;
+			path = CommonTests;
 			sourceTree = "<group>";
 		};
-		E01507992A1F8ABB00A210F1 /* Coordinator */ = {
+		E01507BE2A1F8B3F00A210F1 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				E015079A2A1F8ADE00A210F1 /* AuthenticationCoordinator.swift */,
+				E01507BF2A1F8B5800A210F1 /* CoordinatorProtocol.swift */,
 			);
 			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		E01507C92A1F8B8B00A210F1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E01507CA2A1F8B8B00A210F1 /* Common.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E01507CE2A1F8C4800A210F1 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				E01507CF2A1F8C7100A210F1 /* View */,
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		E01507CF2A1F8C7100A210F1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E01507D02A1F8C9B00A210F1 /* OnboardingViewController.swift */,
-				E01507D22A1F8D3300A210F1 /* OnboardingView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E015076E2A1F868700A210F1 /* Headers */ = {
+		E01507A12A1F8B3300A210F1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E01507822A1F868800A210F1 /* Authentication.h in Headers */,
+				E01507B52A1F8B3300A210F1 /* Common.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E01507722A1F868700A210F1 /* Authentication */ = {
+		E01507A52A1F8B3300A210F1 /* Common */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E01507852A1F868800A210F1 /* Build configuration list for PBXNativeTarget "Authentication" */;
+			buildConfigurationList = E01507B82A1F8B3300A210F1 /* Build configuration list for PBXNativeTarget "Common" */;
 			buildPhases = (
-				E015076E2A1F868700A210F1 /* Headers */,
-				E015076F2A1F868700A210F1 /* Sources */,
-				E01507702A1F868700A210F1 /* Frameworks */,
-				E01507712A1F868700A210F1 /* Resources */,
-				E01507CD2A1F8B8B00A210F1 /* Embed Frameworks */,
+				E01507A12A1F8B3300A210F1 /* Headers */,
+				E01507A22A1F8B3300A210F1 /* Sources */,
+				E01507A32A1F8B3300A210F1 /* Frameworks */,
+				E01507A42A1F8B3300A210F1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Authentication;
-			productName = Authentication;
-			productReference = E01507732A1F868700A210F1 /* Authentication.framework */;
+			name = Common;
+			productName = Common;
+			productReference = E01507A62A1F8B3300A210F1 /* Common.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E015077A2A1F868800A210F1 /* AuthenticationTests */ = {
+		E01507AD2A1F8B3300A210F1 /* CommonTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E01507882A1F868800A210F1 /* Build configuration list for PBXNativeTarget "AuthenticationTests" */;
+			buildConfigurationList = E01507BB2A1F8B3300A210F1 /* Build configuration list for PBXNativeTarget "CommonTests" */;
 			buildPhases = (
-				E01507772A1F868800A210F1 /* Sources */,
-				E01507782A1F868800A210F1 /* Frameworks */,
-				E01507792A1F868800A210F1 /* Resources */,
+				E01507AA2A1F8B3300A210F1 /* Sources */,
+				E01507AB2A1F8B3300A210F1 /* Frameworks */,
+				E01507AC2A1F8B3300A210F1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E015077E2A1F868800A210F1 /* PBXTargetDependency */,
+				E01507B12A1F8B3300A210F1 /* PBXTargetDependency */,
 			);
-			name = AuthenticationTests;
-			productName = AuthenticationTests;
-			productReference = E015077B2A1F868800A210F1 /* AuthenticationTests.xctest */;
+			name = CommonTests;
+			productName = CommonTests;
+			productReference = E01507AE2A1F8B3300A210F1 /* CommonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E015076A2A1F868700A210F1 /* Project object */ = {
+		E015079D2A1F8B3300A210F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					E01507722A1F868700A210F1 = {
+					E01507A52A1F8B3300A210F1 = {
 						CreatedOnToolsVersion = 14.0;
 						LastSwiftMigration = 1400;
 					};
-					E015077A2A1F868800A210F1 = {
+					E01507AD2A1F8B3300A210F1 = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
 			};
-			buildConfigurationList = E015076D2A1F868700A210F1 /* Build configuration list for PBXProject "Authentication" */;
+			buildConfigurationList = E01507A02A1F8B3300A210F1 /* Build configuration list for PBXProject "Common" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,26 +170,26 @@
 				en,
 				Base,
 			);
-			mainGroup = E01507692A1F868700A210F1;
-			productRefGroup = E01507742A1F868700A210F1 /* Products */;
+			mainGroup = E015079C2A1F8B3300A210F1;
+			productRefGroup = E01507A72A1F8B3300A210F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E01507722A1F868700A210F1 /* Authentication */,
-				E015077A2A1F868800A210F1 /* AuthenticationTests */,
+				E01507A52A1F8B3300A210F1 /* Common */,
+				E01507AD2A1F8B3300A210F1 /* CommonTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E01507712A1F868700A210F1 /* Resources */ = {
+		E01507A42A1F8B3300A210F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E01507792A1F868800A210F1 /* Resources */ = {
+		E01507AC2A1F8B3300A210F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,36 +199,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E015076F2A1F868700A210F1 /* Sources */ = {
+		E01507A22A1F8B3300A210F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E01507D32A1F8D3300A210F1 /* OnboardingView.swift in Sources */,
-				E015079B2A1F8ADE00A210F1 /* AuthenticationCoordinator.swift in Sources */,
-				E01507D12A1F8C9B00A210F1 /* OnboardingViewController.swift in Sources */,
+				E01507C02A1F8B5800A210F1 /* CoordinatorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E01507772A1F868800A210F1 /* Sources */ = {
+		E01507AA2A1F8B3300A210F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E01507812A1F868800A210F1 /* AuthenticationTests.swift in Sources */,
+				E01507B42A1F8B3300A210F1 /* CommonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E015077E2A1F868800A210F1 /* PBXTargetDependency */ = {
+		E01507B12A1F8B3300A210F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E01507722A1F868700A210F1 /* Authentication */;
-			targetProxy = E015077D2A1F868800A210F1 /* PBXContainerItemProxy */;
+			target = E01507A52A1F8B3300A210F1 /* Common */;
+			targetProxy = E01507B02A1F8B3300A210F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		E01507832A1F868800A210F1 /* Debug */ = {
+		E01507B62A1F8B3300A210F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -341,7 +289,7 @@
 			};
 			name = Debug;
 		};
-		E01507842A1F868800A210F1 /* Release */ = {
+		E01507B72A1F8B3300A210F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -398,7 +346,7 @@
 			};
 			name = Release;
 		};
-		E01507862A1F868800A210F1 /* Debug */ = {
+		E01507B92A1F8B3300A210F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -418,7 +366,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.williamjames.Authentication;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamjames.Common;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -428,7 +376,7 @@
 			};
 			name = Debug;
 		};
-		E01507872A1F868800A210F1 /* Release */ = {
+		E01507BA2A1F8B3300A210F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -448,7 +396,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.williamjames.Authentication;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamjames.Common;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -457,7 +405,7 @@
 			};
 			name = Release;
 		};
-		E01507892A1F868800A210F1 /* Debug */ = {
+		E01507BC2A1F8B3300A210F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -466,7 +414,7 @@
 				DEVELOPMENT_TEAM = MZK2Y22TFS;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.williamjames.AuthenticationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamjames.CommonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -474,7 +422,7 @@
 			};
 			name = Debug;
 		};
-		E015078A2A1F868800A210F1 /* Release */ = {
+		E01507BD2A1F8B3300A210F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -483,7 +431,7 @@
 				DEVELOPMENT_TEAM = MZK2Y22TFS;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.williamjames.AuthenticationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamjames.CommonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -494,34 +442,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E015076D2A1F868700A210F1 /* Build configuration list for PBXProject "Authentication" */ = {
+		E01507A02A1F8B3300A210F1 /* Build configuration list for PBXProject "Common" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E01507832A1F868800A210F1 /* Debug */,
-				E01507842A1F868800A210F1 /* Release */,
+				E01507B62A1F8B3300A210F1 /* Debug */,
+				E01507B72A1F8B3300A210F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E01507852A1F868800A210F1 /* Build configuration list for PBXNativeTarget "Authentication" */ = {
+		E01507B82A1F8B3300A210F1 /* Build configuration list for PBXNativeTarget "Common" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E01507862A1F868800A210F1 /* Debug */,
-				E01507872A1F868800A210F1 /* Release */,
+				E01507B92A1F8B3300A210F1 /* Debug */,
+				E01507BA2A1F8B3300A210F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E01507882A1F868800A210F1 /* Build configuration list for PBXNativeTarget "AuthenticationTests" */ = {
+		E01507BB2A1F8B3300A210F1 /* Build configuration list for PBXNativeTarget "CommonTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E01507892A1F868800A210F1 /* Debug */,
-				E015078A2A1F868800A210F1 /* Release */,
+				E01507BC2A1F8B3300A210F1 /* Debug */,
+				E01507BD2A1F8B3300A210F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E015076A2A1F868700A210F1 /* Project object */;
+	rootObject = E015079D2A1F8B3300A210F1 /* Project object */;
 }

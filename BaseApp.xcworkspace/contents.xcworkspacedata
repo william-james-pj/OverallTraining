@@ -5,6 +5,9 @@
       location = "group:Features/Authentication/Authentication.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Features/Common/Common.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:BaseApp.xcodeproj">
    </FileRef>
 </Workspace>
