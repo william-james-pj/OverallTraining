@@ -23,43 +23,43 @@ final class OnboardingView: UIView, OnboardingViewProtocol {
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
     }()
-    
+
     private let labelTitle: UILabel = {
         let label = UILabel()
         label.text = "Tests"
         label.textColor = .white
         return label
     }()
-    
+
     // MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     // MARK: - Setup
     private func setupView() {
         backgroundColor = UIColor.primaryColor
-        
+
         buildHierarchy()
         buildConstraints()
     }
-    
+
     // MARK: - Methods
     private func buildHierarchy() {
         addSubview(stackBase)
     }
-    
+
     private func buildConstraints() {
         NSLayoutConstraint.activate([
             stackBase.topAnchor.constraint(equalTo: topAnchor),
             stackBase.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackBase.trailingAnchor.constraint(equalTo: trailingAnchor),
-            stackBase.bottomAnchor.constraint(equalTo: bottomAnchor),
+            stackBase.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
 }

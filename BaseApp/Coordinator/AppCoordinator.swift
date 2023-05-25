@@ -19,5 +19,4 @@ final class AppCoordinator: CoordinatorProtocol {
         authFlowCoordinator.parentCoordinator = self
         authFlowCoordinator.start()
     }
-
 }

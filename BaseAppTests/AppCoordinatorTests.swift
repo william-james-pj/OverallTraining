@@ -2,7 +2,7 @@ import XCTest
 @testable import BaseApp
 
 final class AppCoordinatorTests: XCTestCase {
-    
+
     private var sut: AppCoordinator!
     private var navigationController: UINavigationControllerSpy!
 
@@ -23,6 +23,4 @@ final class AppCoordinatorTests: XCTestCase {
 
         XCTAssertTrue(navigationController.pushCalled == 1, "The start() should push the view controller only once")
     }
-    
-
 }

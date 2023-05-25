@@ -1,5 +1,6 @@
 import UIKit
 
+// swiftlint:disable identifier_name
 extension UIFont {
     static var xxs = UIFont.systemFont(ofSize: 8)
     static var xs = UIFont.systemFont(ofSize: 10)

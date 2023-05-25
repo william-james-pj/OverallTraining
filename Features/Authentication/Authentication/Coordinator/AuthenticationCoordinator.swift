@@ -10,12 +10,12 @@ public final class AuthenticationCoordinator: AuthenticationCoordinatorProtocol 
 
     // MARK: - Variables
     public weak var parentCoordinator: CoordinatorProtocol?
-    
+
     // MARK: - Init
     public init (navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-    
+
     // MARK: - Methods
     public func start() {
         let onboardingVC = OnboardingViewController()

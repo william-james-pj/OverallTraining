@@ -1,7 +1,8 @@
 import UIKit
 
+// swiftlint:disable all
 final public class UINavigationControllerSpy: UINavigationController {
-    
+
     private(set) public var currentViewController: UIViewController?
     private(set) public var viewControllerStack: [UIViewController] = []
     override public init(rootViewController: UIViewController) {
@@ -9,15 +10,15 @@ final public class UINavigationControllerSpy: UINavigationController {
         currentViewController = rootViewController
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     public init() {
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private(set) public var presentedCalled: Int = 0
     private(set) public var viewControllerPresented: UIViewController?
     override public func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
@@ -30,7 +31,7 @@ final public class UINavigationControllerSpy: UINavigationController {
         dismissCalled += 1
         viewControllerPresented = nil
     }
-    
+
     private(set) public var pushCalled: Int = 0
     override public func pushViewController(_ viewController: UIViewController, animated: Bool) {
         pushCalled += 1
@@ -43,7 +44,7 @@ final public class UINavigationControllerSpy: UINavigationController {
         currentViewController = vc
         viewControllerStack.append(vc)
     }
-    
+
     private(set) public var popViewControllerCalled: Int = 0
     override public func popViewController(animated: Bool) -> UIViewController? {
         popViewControllerCalled += 1
@@ -51,7 +52,7 @@ final public class UINavigationControllerSpy: UINavigationController {
         currentViewController = viewControllerStack.last
         return viewControllerPopped
     }
-    
+
     override public var topViewController: UIViewController? { get {
         viewControllerStack.first
     }}
