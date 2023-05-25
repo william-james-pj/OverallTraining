@@ -11,6 +11,11 @@
 		E01507B42A1F8B3300A210F1 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507B32A1F8B3300A210F1 /* CommonTests.swift */; };
 		E01507B52A1F8B3300A210F1 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = E01507A92A1F8B3300A210F1 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E01507C02A1F8B5800A210F1 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507BF2A1F8B5800A210F1 /* CoordinatorProtocol.swift */; };
+		E01507D82A1F989200A210F1 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507D72A1F989200A210F1 /* UIColor+Extensions.swift */; };
+		E01507DA2A1F98EC00A210F1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507D92A1F98EC00A210F1 /* UIView+Extensions.swift */; };
+		E01507DC2A1F990600A210F1 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507DB2A1F990600A210F1 /* DispatchQueue+Extension.swift */; };
+		E01507DE2A1F992400A210F1 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507DD2A1F992400A210F1 /* Array+Extensions.swift */; };
+		E01507E02A1F994300A210F1 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507DF2A1F994300A210F1 /* UIFont+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		E01507AE2A1F8B3300A210F1 /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01507B32A1F8B3300A210F1 /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		E01507BF2A1F8B5800A210F1 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		E01507D72A1F989200A210F1 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		E01507D92A1F98EC00A210F1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		E01507DB2A1F990600A210F1 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
+		E01507DD2A1F992400A210F1 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		E01507DF2A1F994300A210F1 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,7 @@
 		E01507A82A1F8B3300A210F1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E01507D62A1F987400A210F1 /* Extension */,
 				E01507BE2A1F8B3F00A210F1 /* Coordinator */,
 				E01507A92A1F8B3300A210F1 /* Common.h */,
 			);
@@ -91,6 +102,18 @@
 				E01507BF2A1F8B5800A210F1 /* CoordinatorProtocol.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E01507D62A1F987400A210F1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E01507D72A1F989200A210F1 /* UIColor+Extensions.swift */,
+				E01507D92A1F98EC00A210F1 /* UIView+Extensions.swift */,
+				E01507DB2A1F990600A210F1 /* DispatchQueue+Extension.swift */,
+				E01507DD2A1F992400A210F1 /* Array+Extensions.swift */,
+				E01507DF2A1F994300A210F1 /* UIFont+Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +226,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01507DA2A1F98EC00A210F1 /* UIView+Extensions.swift in Sources */,
+				E01507DE2A1F992400A210F1 /* Array+Extensions.swift in Sources */,
+				E01507DC2A1F990600A210F1 /* DispatchQueue+Extension.swift in Sources */,
 				E01507C02A1F8B5800A210F1 /* CoordinatorProtocol.swift in Sources */,
+				E01507E02A1F994300A210F1 /* UIFont+Extensions.swift in Sources */,
+				E01507D82A1F989200A210F1 /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

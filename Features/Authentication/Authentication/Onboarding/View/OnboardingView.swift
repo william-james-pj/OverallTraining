@@ -43,7 +43,7 @@ final class OnboardingView: UIView, OnboardingViewProtocol {
     
     // MARK: - Setup
     private func setupView() {
-        backgroundColor = .red
+        backgroundColor = UIColor.primaryColor
         
         buildHierarchy()
         buildConstraints()
