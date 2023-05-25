@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "58B599B0-EA0D-462C-B1CD-D3C26B9C1778",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:BaseApp.xcodeproj",
+      "identifier" : "E01507352A1F859F00A210F1",
+      "name" : "BaseApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:BaseApp.xcodeproj",
+        "identifier" : "E015074B2A1F85A100A210F1",
+        "name" : "BaseAppTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Features\/Authentication\/Authentication.xcodeproj",
+        "identifier" : "E015077A2A1F868800A210F1",
+        "name" : "AuthenticationTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -1,21 +1,23 @@
 //
-//  BaseAppTests.swift
-//  BaseAppTests
+//  CommonTests.swift
+//  CommonTests
 //
 //  Created by Pinto Junior, William James on 25/05/23.
 //
 
 import XCTest
-@testable import BaseApp
+@testable import Common
 
-final class BaseAppTests: XCTestCase {
+final class CommonTests: XCTestCase {
 
     override func setUpWithError() throws {
+        try super.setUpWithError()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        try super.tearDownWithError()
     }
 
     func testExample() throws {
@@ -32,5 +34,4 @@ final class BaseAppTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }
