@@ -13,7 +13,6 @@
 		E01507412A1F859F00A210F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E015073F2A1F859F00A210F1 /* Main.storyboard */; };
 		E01507432A1F85A100A210F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E01507422A1F85A100A210F1 /* Assets.xcassets */; };
 		E01507462A1F85A100A210F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01507442A1F85A100A210F1 /* LaunchScreen.storyboard */; };
-		E01507512A1F85A100A210F1 /* BaseAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507502A1F85A100A210F1 /* BaseAppTests.swift */; };
 		E015075B2A1F85A100A210F1 /* BaseAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E015075A2A1F85A100A210F1 /* BaseAppUITests.swift */; };
 		E015075D2A1F85A100A210F1 /* BaseAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E015075C2A1F85A100A210F1 /* BaseAppUITestsLaunchTests.swift */; };
 		E01507962A1F8A0B00A210F1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507952A1F8A0B00A210F1 /* AppCoordinator.swift */; };
@@ -21,6 +20,8 @@
 		E01507C42A1F8B7700A210F1 /* Authentication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E01507C22A1F8B7700A210F1 /* Authentication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E01507C72A1F8B7B00A210F1 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E01507C62A1F8B7B00A210F1 /* Common.framework */; };
 		E01507C82A1F8B7B00A210F1 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E01507C62A1F8B7B00A210F1 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E01507E22A1F9D1B00A210F1 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507E12A1F9D1B00A210F1 /* AppCoordinatorTests.swift */; };
+		E01507ED2A1FA05D00A210F1 /* UINavigationControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507EC2A1FA05D00A210F1 /* UINavigationControllerSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,13 +66,15 @@
 		E01507452A1F85A100A210F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E01507472A1F85A100A210F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E015074C2A1F85A100A210F1 /* BaseAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E01507502A1F85A100A210F1 /* BaseAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAppTests.swift; sourceTree = "<group>"; };
 		E01507562A1F85A100A210F1 /* BaseAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E015075A2A1F85A100A210F1 /* BaseAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAppUITests.swift; sourceTree = "<group>"; };
 		E015075C2A1F85A100A210F1 /* BaseAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E01507952A1F8A0B00A210F1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		E01507C22A1F8B7700A210F1 /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01507C62A1F8B7B00A210F1 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01507E12A1F9D1B00A210F1 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		E01507EC2A1FA05D00A210F1 /* UINavigationControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerSpy.swift; sourceTree = "<group>"; };
+		E0601D5E2A1FC645009F85A0 /* BaseApp-UnitTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BaseApp-UnitTestPlan.xctestplan"; path = "BaseApp/BaseApp-UnitTestPlan.xctestplan"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +143,9 @@
 		E015074F2A1F85A100A210F1 /* BaseAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				E01507502A1F85A100A210F1 /* BaseAppTests.swift */,
+				E0601D5E2A1FC645009F85A0 /* BaseApp-UnitTestPlan.xctestplan */,
+				E01507EB2A1FA02100A210F1 /* Doubles */,
+				E01507E12A1F9D1B00A210F1 /* AppCoordinatorTests.swift */,
 			);
 			path = BaseAppTests;
 			sourceTree = "<group>";
@@ -169,6 +174,14 @@
 				E01507C22A1F8B7700A210F1 /* Authentication.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E01507EB2A1FA02100A210F1 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				E01507EC2A1FA05D00A210F1 /* UINavigationControllerSpy.swift */,
+			);
+			path = Doubles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,7 +327,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E01507512A1F85A100A210F1 /* BaseAppTests.swift in Sources */,
+				E01507ED2A1FA05D00A210F1 /* UINavigationControllerSpy.swift in Sources */,
+				E01507E22A1F9D1B00A210F1 /* AppCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
