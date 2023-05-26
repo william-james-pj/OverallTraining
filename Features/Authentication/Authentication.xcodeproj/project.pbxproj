@@ -106,6 +106,7 @@
 		E015077F2A1F868800A210F1 /* AuthenticationTests */ = {
 			isa = PBXGroup;
 			children = (
+				E0FECCA72A20F26300A78C73 /* Onboarding */,
 				E01507E82A1F9FF600A210F1 /* Doubles */,
 				E01507E62A1F9E2800A210F1 /* AuthenticationCoordinatorTests.swift */,
 			);
@@ -151,6 +152,13 @@
 				E01507E92A1FA00C00A210F1 /* UINavigationControllerSpy.swift */,
 			);
 			path = Doubles;
+			sourceTree = "<group>";
+		};
+		E0FECCA72A20F26300A78C73 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
