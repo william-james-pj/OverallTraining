@@ -16,6 +16,9 @@
 		E01507D32A1F8D3300A210F1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507D22A1F8D3300A210F1 /* OnboardingView.swift */; };
 		E01507E72A1F9E2800A210F1 /* AuthenticationCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507E62A1F9E2800A210F1 /* AuthenticationCoordinatorTests.swift */; };
 		E01507EA2A1FA00C00A210F1 /* UINavigationControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01507E92A1FA00C00A210F1 /* UINavigationControllerSpy.swift */; };
+		E0FECCAA2A20F3C400A78C73 /* OnboardingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FECCA92A20F3C400A78C73 /* OnboardingViewTests.swift */; };
+		E0FECCAC2A20FAC700A78C73 /* OnboardingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FECCAB2A20FAC700A78C73 /* OnboardingViewControllerTests.swift */; };
+		E0FECCAF2A20FB5D00A78C73 /* OnboardingViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FECCAE2A20FB5D00A78C73 /* OnboardingViewSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		E01507D22A1F8D3300A210F1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		E01507E62A1F9E2800A210F1 /* AuthenticationCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinatorTests.swift; sourceTree = "<group>"; };
 		E01507E92A1FA00C00A210F1 /* UINavigationControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerSpy.swift; sourceTree = "<group>"; };
+		E0FECCA92A20F3C400A78C73 /* OnboardingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewTests.swift; sourceTree = "<group>"; };
+		E0FECCAB2A20FAC700A78C73 /* OnboardingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerTests.swift; sourceTree = "<group>"; };
+		E0FECCAE2A20FB5D00A78C73 /* OnboardingViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				E01507E82A1F9FF600A210F1 /* Doubles */,
-				E01507E62A1F9E2800A210F1 /* AuthenticationCoordinatorTests.swift */,
+				E0FECCA82A20F3A400A78C73 /* Coordinator */,
+				E0FECCA72A20F26300A78C73 /* Onboarding */,
 			);
 			path = AuthenticationTests;
 			sourceTree = "<group>";
@@ -149,6 +156,32 @@
 			isa = PBXGroup;
 			children = (
 				E01507E92A1FA00C00A210F1 /* UINavigationControllerSpy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		E0FECCA72A20F26300A78C73 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E0FECCAD2A20FB4100A78C73 /* Doubles */,
+				E0FECCAB2A20FAC700A78C73 /* OnboardingViewControllerTests.swift */,
+				E0FECCA92A20F3C400A78C73 /* OnboardingViewTests.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E0FECCA82A20F3A400A78C73 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E01507E62A1F9E2800A210F1 /* AuthenticationCoordinatorTests.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E0FECCAD2A20FB4100A78C73 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				E0FECCAE2A20FB5D00A78C73 /* OnboardingViewSpy.swift */,
 			);
 			path = Doubles;
 			sourceTree = "<group>";
@@ -275,7 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E01507EA2A1FA00C00A210F1 /* UINavigationControllerSpy.swift in Sources */,
+				E0FECCAA2A20F3C400A78C73 /* OnboardingViewTests.swift in Sources */,
+				E0FECCAF2A20FB5D00A78C73 /* OnboardingViewSpy.swift in Sources */,
 				E01507E72A1F9E2800A210F1 /* AuthenticationCoordinatorTests.swift in Sources */,
+				E0FECCAC2A20FAC700A78C73 /* OnboardingViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
