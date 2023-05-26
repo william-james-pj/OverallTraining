@@ -13,7 +13,6 @@ protocol OnboardingViewProtocol where Self: UIView {
 }
 
 final class OnboardingView: UIView, OnboardingViewProtocol {
-    // MARK: - Constraints
     // MARK: - Variables
     var loginButtonPressed: (() -> Void)?
     var registerButtonPressed: (() -> Void)?
@@ -22,9 +21,10 @@ final class OnboardingView: UIView, OnboardingViewProtocol {
     private let stackBase: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        stack.spacing = 40
-        stack.distribution = .fill
+        stack.spacing = 0
+        stack.distribution = .equalSpacing
         stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.accessibilityIdentifier = "stackBase"
         return stack
     }()
     
@@ -76,17 +76,13 @@ final class OnboardingView: UIView, OnboardingViewProtocol {
         return label
     }()
     
-    private let viewContentAux: UIView = {
-        let view = UIView()
-        return view
-    }()
-    
     private let viewFooter: UIView = {
         let view = UIView()
         view.backgroundColor = .primaryColor
         view.clipsToBounds = true
         view.layer.cornerRadius = 24
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.accessibilityIdentifier = "viewFooter"
         return view
     }()
     
@@ -96,7 +92,29 @@ final class OnboardingView: UIView, OnboardingViewProtocol {
         stack.spacing = 16
         stack.distribution = .equalSpacing
         stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.accessibilityIdentifier = "stackFooter"
         return stack
+    }()
+    
+    private let buttonRegister: UIButton = {
+//        var config = UIButton.Configuration.plain()
+//        config.titleAlignment = .center
+//        config.baseForegroundColor = .cardColor
+//        config.buttonSize = .small
+//
+//        var container = AttributeContainer()
+//        container.font = .systemFont(ofSize: 14, weight: .semibold)
+//        config.attributedTitle = AttributedString("Continuar", attributes: container)
+//
+//        let button = UIButton()
+//        button.configuration = config
+//        button.accessibilityIdentifier = "buttonRegister"
+//        return button
+        
+        let button = UIButton()
+        button.setTitle("Test", for: .normal)
+        button.accessibilityIdentifier = "buttonRegister"
+        return button
     }()
     
     private let buttonLogin: UIButton = {
@@ -112,21 +130,7 @@ final class OnboardingView: UIView, OnboardingViewProtocol {
         
         let button = UIButton()
         button.configuration = config
-        return button
-    }()
-    
-    private let buttonRegister: UIButton = {
-        var config = UIButton.Configuration.plain()
-        config.titleAlignment = .center
-        config.baseForegroundColor = .cardColor
-        config.buttonSize = .small
-        
-        var container = AttributeContainer()
-        container.font = .systemFont(ofSize: 14, weight: .semibold)
-        config.attributedTitle = AttributedString("Continuar", attributes: container)
-        
-        let button = UIButton()
-        button.configuration = config
+        button.accessibilityIdentifier = "buttonLogin"
         return button
     }()
     
@@ -174,8 +178,6 @@ final class OnboardingView: UIView, OnboardingViewProtocol {
         stackContent.addArrangedSubview(stackText)
         stackText.addArrangedSubview(labelTitle)
         stackText.addArrangedSubview(labelDescription)
-        
-        stackContent.addArrangedSubview(viewContentAux)
         
         stackBase.addArrangedSubview(viewFooter)
         viewFooter.addSubview(stackFooter)
