@@ -48,6 +48,13 @@ final class OnboardingView: UIView, OnboardingViewProtocol {
         return view
     }()
     
+    private let imageLogo: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "logo")
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
     private let stackText: UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
@@ -97,22 +104,17 @@ final class OnboardingView: UIView, OnboardingViewProtocol {
     }()
     
     private let buttonRegister: UIButton = {
-//        var config = UIButton.Configuration.plain()
-//        config.titleAlignment = .center
-//        config.baseForegroundColor = .cardColor
-//        config.buttonSize = .small
-//
-//        var container = AttributeContainer()
-//        container.font = .systemFont(ofSize: 14, weight: .semibold)
-//        config.attributedTitle = AttributedString("Continuar", attributes: container)
-//
-//        let button = UIButton()
-//        button.configuration = config
-//        button.accessibilityIdentifier = "buttonRegister"
-//        return button
-        
+        var config = UIButton.Configuration.plain()
+        config.titleAlignment = .center
+        config.baseForegroundColor = .white
+        config.buttonSize = .small
+
+        var container = AttributeContainer()
+        container.font = .systemFont(ofSize: 14, weight: .semibold)
+        config.attributedTitle = AttributedString("Continuar", attributes: container)
+
         let button = UIButton()
-        button.setTitle("Test", for: .normal)
+        button.configuration = config
         button.accessibilityIdentifier = "buttonRegister"
         return button
     }()
@@ -174,6 +176,7 @@ final class OnboardingView: UIView, OnboardingViewProtocol {
         
         viewContent.addSubview(stackContent)
         stackContent.addArrangedSubview(viewImageContainer)
+        viewImageContainer.addSubview(imageLogo)
         
         stackContent.addArrangedSubview(stackText)
         stackText.addArrangedSubview(labelTitle)
@@ -198,6 +201,11 @@ final class OnboardingView: UIView, OnboardingViewProtocol {
             stackContent.bottomAnchor.constraint(equalTo: viewContent.bottomAnchor),
             
             viewImageContainer.heightAnchor.constraint(equalToConstant: 280),
+            
+            imageLogo.widthAnchor.constraint(equalToConstant: 250),
+            imageLogo.heightAnchor.constraint(equalToConstant: 250),
+            imageLogo.centerXAnchor.constraint(equalTo: viewImageContainer.centerXAnchor),
+            imageLogo.centerYAnchor.constraint(equalTo: imageLogo.centerYAnchor),
             
             viewFooter.heightAnchor.constraint(equalToConstant: 130),
             

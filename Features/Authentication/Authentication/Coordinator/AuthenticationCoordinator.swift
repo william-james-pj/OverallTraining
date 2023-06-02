@@ -18,7 +18,8 @@ public final class AuthenticationCoordinator: AuthenticationCoordinatorProtocol 
 
     // MARK: - Methods
     public func start() {
-        let onboardingVC = OnboardingViewController()
+        let onboardingVC = RegisterAgeViewController()
+//        let onboardingVC = OnboardingViewController()
         onboardingVC.delegate = self
         navigationController.pushViewController(onboardingVC, animated: false)
     }

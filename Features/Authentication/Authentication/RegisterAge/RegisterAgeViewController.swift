@@ -1,15 +1,22 @@
+//
+//  RegisterAgeViewController.swift
+//  Authentication
+//
+//  Created by Pinto Junior, William James on 26/05/23.
+//
+
 import UIKit
 
-final class OnboardingViewController: UIViewController {
+final class RegisterAgeViewController: UIViewController {
     // MARK: - Constraints
-    private let onboardingView: OnboardingViewProtocol
+    private let registerAgeView: RegisterAgeViewProtocol
 
     // MARK: - Variables
     weak var delegate: AuthenticationCoordinatorProtocol?
 
     // MARK: - Init
-    init(view: OnboardingViewProtocol = OnboardingView()) {
-        onboardingView = view
+    init(view: RegisterAgeViewProtocol = RegisterAgeView()) {
+        registerAgeView = view
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -20,7 +27,7 @@ final class OnboardingViewController: UIViewController {
 
     // MARK: - Lifecycle
     override func loadView() {
-        view = onboardingView
+        view = registerAgeView
     }
 
     override func viewDidLoad() {
