@@ -1,10 +1,3 @@
-//
-//  RegisterAgeViewController.swift
-//  Authentication
-//
-//  Created by Pinto Junior, William James on 26/05/23.
-//
-
 import UIKit
 
 final class RegisterAgeViewController: UIViewController {

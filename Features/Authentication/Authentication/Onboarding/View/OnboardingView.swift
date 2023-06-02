@@ -1,10 +1,3 @@
-//
-//  OnboardingView.swift
-//  Authentication
-//
-//  Created by Pinto Junior, William James on 25/05/23.
-//
-
 import UIKit
 
 protocol OnboardingViewProtocol where Self: UIView {

@@ -29,6 +29,12 @@ final class RegisterAgeView: UIView, RegisterAgeViewProtocol {
         return view
     }()
     
+    private let viewRegisterProgress: RegisterProgressProtocol = {
+        let view = RegisterProgress()
+        view.setSteps(steps: 5, currentStep: 1)
+        return view
+    }()
+    
     private let viewRegisterFooter = RegisterFooter()
     
     // MARK: - Init
@@ -52,13 +58,14 @@ final class RegisterAgeView: UIView, RegisterAgeViewProtocol {
     // MARK: - Methods
     private func buildHierarchy() {
         addSubview(stackBase)
+        stackBase.addArrangedSubview(viewRegisterProgress)
         stackBase.addArrangedSubview(viewContent)
         stackBase.addArrangedSubview(viewRegisterFooter)
     }
     
     private func buildConstraints() {
         NSLayoutConstraint.activate([            
-            stackBase.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            stackBase.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8),
             stackBase.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackBase.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackBase.bottomAnchor.constraint(equalTo: bottomAnchor),
