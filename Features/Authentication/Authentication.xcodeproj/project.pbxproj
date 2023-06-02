@@ -21,6 +21,9 @@
 		E080C0832A2925A4001AA27F /* RegisterFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E080C0822A2925A4001AA27F /* RegisterFooter.swift */; };
 		E0F03F5F2A2A1E6B0014719D /* RegisterProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F03F5E2A2A1E6B0014719D /* RegisterProgress.swift */; };
 		E0F03F612A2A22C10014719D /* RegisterProgressStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F03F602A2A22C10014719D /* RegisterProgressStep.swift */; };
+		E0F03F652A2A5B4A0014719D /* RegisterPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F03F642A2A5B4A0014719D /* RegisterPicker.swift */; };
+		E0F03F672A2A63250014719D /* RegisterPickerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F03F662A2A63250014719D /* RegisterPickerViewDataSource.swift */; };
+		E0F03F692A2A66010014719D /* RegisterPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F03F682A2A66000014719D /* RegisterPickerViewDelegate.swift */; };
 		E0FECCAA2A20F3C400A78C73 /* OnboardingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FECCA92A20F3C400A78C73 /* OnboardingViewTests.swift */; };
 		E0FECCAC2A20FAC700A78C73 /* OnboardingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FECCAB2A20FAC700A78C73 /* OnboardingViewControllerTests.swift */; };
 		E0FECCAF2A20FB5D00A78C73 /* OnboardingViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FECCAE2A20FB5D00A78C73 /* OnboardingViewSpy.swift */; };
@@ -65,6 +68,9 @@
 		E080C0822A2925A4001AA27F /* RegisterFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFooter.swift; sourceTree = "<group>"; };
 		E0F03F5E2A2A1E6B0014719D /* RegisterProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProgress.swift; sourceTree = "<group>"; };
 		E0F03F602A2A22C10014719D /* RegisterProgressStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProgressStep.swift; sourceTree = "<group>"; };
+		E0F03F642A2A5B4A0014719D /* RegisterPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPicker.swift; sourceTree = "<group>"; };
+		E0F03F662A2A63250014719D /* RegisterPickerViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPickerViewDataSource.swift; sourceTree = "<group>"; };
+		E0F03F682A2A66000014719D /* RegisterPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPickerViewDelegate.swift; sourceTree = "<group>"; };
 		E0FECCA92A20F3C400A78C73 /* OnboardingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewTests.swift; sourceTree = "<group>"; };
 		E0FECCAB2A20FAC700A78C73 /* OnboardingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerTests.swift; sourceTree = "<group>"; };
 		E0FECCAE2A20FB5D00A78C73 /* OnboardingViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewSpy.swift; sourceTree = "<group>"; };
@@ -184,6 +190,7 @@
 		E080C0802A292580001AA27F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E0F03F632A2A5B300014719D /* RegisterPicker */,
 				E0F03F622A2A2F5F0014719D /* RegisterProgress */,
 				E080C0822A2925A4001AA27F /* RegisterFooter.swift */,
 			);
@@ -197,6 +204,16 @@
 				E0F03F602A2A22C10014719D /* RegisterProgressStep.swift */,
 			);
 			path = RegisterProgress;
+			sourceTree = "<group>";
+		};
+		E0F03F632A2A5B300014719D /* RegisterPicker */ = {
+			isa = PBXGroup;
+			children = (
+				E0F03F642A2A5B4A0014719D /* RegisterPicker.swift */,
+				E0F03F662A2A63250014719D /* RegisterPickerViewDataSource.swift */,
+				E0F03F682A2A66000014719D /* RegisterPickerViewDelegate.swift */,
+			);
+			path = RegisterPicker;
 			sourceTree = "<group>";
 		};
 		E0FECCA72A20F26300A78C73 /* Onboarding */ = {
@@ -340,9 +357,12 @@
 				E0F03F5F2A2A1E6B0014719D /* RegisterProgress.swift in Sources */,
 				E044C8B92A211CE200003433 /* RegisterAgeViewController.swift in Sources */,
 				E0F03F612A2A22C10014719D /* RegisterProgressStep.swift in Sources */,
+				E0F03F672A2A63250014719D /* RegisterPickerViewDataSource.swift in Sources */,
 				E044C8B72A211C5300003433 /* RegisterAgeView.swift in Sources */,
 				E080C0832A2925A4001AA27F /* RegisterFooter.swift in Sources */,
 				E015079B2A1F8ADE00A210F1 /* AuthenticationCoordinator.swift in Sources */,
+				E0F03F652A2A5B4A0014719D /* RegisterPicker.swift in Sources */,
+				E0F03F692A2A66010014719D /* RegisterPickerViewDelegate.swift in Sources */,
 				E01507D12A1F8C9B00A210F1 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
